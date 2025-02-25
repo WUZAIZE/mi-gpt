@@ -12,7 +12,7 @@ const botProfile = `
 const masterProfile = `
 性别：男
 性格：善良正直
-其他：总是舍己为人，是傻妞的主人。
+其他：总是舍己为人，是翠花的主人。
 `.trim();
 
 // 系统 Prompt 模板，可以更灵活的控制 AI 的各种行为规则，和是否需要携带上下文等
@@ -78,11 +78,11 @@ Bad example: "2024年02月28日星期三 23:01 {{botName}}: 我是{{botName}}"
 export default {
   systemTemplate,
   bot: {
-    name: "傻妞",
+    name: "翠花",
     profile: botProfile,
   },
   master: {
-    name: "陆小千",
+    name: "建国",
     profile: masterProfile,
   },
   speaker: {
@@ -91,11 +91,11 @@ export default {
      */
 
     // 小米 ID
-    userId: "987654321", // 注意：不是手机号或邮箱，请在「个人信息」-「小米 ID」查看
+    userId: "43128517", // 注意：不是手机号或邮箱，请在「个人信息」-「小米 ID」查看
     // 账号密码
-    password: "123456",
+    password: "Jackwhere469781",
     // 小爱音箱 DID 或在米家中设置的名称
-    did: "小爱音箱Pro", // 注意空格、大小写和错别字（音响 👉 音箱）
+    did: "小爱触屏音箱", // 注意空格、大小写和错别字（音响 👉 音箱）
 
     /**
      * 💡 唤醒词与提示语
@@ -127,7 +127,7 @@ export default {
     // TTS 指令，请到 https://home.miot-spec.com 查询具体指令
     ttsCommand: [5, 1],
     // 设备唤醒指令，请到 https://home.miot-spec.com 查询具体指令
-    wakeUpCommand: [5, 3],
+    wakeUpCommand: [5, 2],
     // 查询是否在播放中指令，请到 https://home.miot-spec.com 查询具体指令
     // playingCommand: [3, 1, 1], // 默认无需配置此参数，查询播放状态异常时再尝试开启
 
